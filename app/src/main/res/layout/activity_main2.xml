@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@color/colorBackground"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_sides"
+            android:layout_marginRight="@dimen/margin_sides"
+            >
+
+            <!--
+            LinearLayout below holds button to open and close problem 1
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textTitleProblem1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/large_text"
+                    android:gravity="center_vertical"
+                    />
+                <Button
+                    android:id="@+id/openProblem1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openProblems"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/medium_text"
+                    />
+
+
+            </LinearLayout>
+            <!--
+            LinearLayout below holds the question and options
+            for problem 1
+            -->
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textQuestionProblem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckBoxClicked"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/medium_text"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkBox1Problem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckBoxClicked"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/medium_text"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkBox2Problem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckBoxClicked"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/medium_text"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkBox3Problem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckBoxClicked"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/medium_text"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkBox4Problem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckBoxClicked"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/medium_text"
+                    />
+
+                <Button
+                    android:id="@+id/buttonToQuestion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="openProblems"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/medium_text"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <!--
+            LinearLayout below holds button to open and close problem 2
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/textTitleProblem2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/large_text"
+                    android:gravity="center_vertical"
+                    />
+
+                <Button
+                    android:id="@+id/openProblem2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openProblems"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+            </LinearLayout>
+            <!--
+            LinearLayout below holds the question and EditText
+            for problem 2
+            -->
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textQuestionProblem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckBoxClicked"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+                <EditText
+                    android:id="@+id/edtTxtQuestion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    android:background="@color/color_viewBackground"
+                    android:padding="@dimen/padding_editText"
+                    />
+
+                <Button
+                    android:id="@+id/buttonToQuestion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="openProblems"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <!--
+            LinearLayout below holds button to open and close problem 3
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textTitleProblem3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/large_text"
+                    android:gravity="center_vertical"
+                    />
+                <Button
+                    android:id="@+id/openProblem3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openProblems"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+            </LinearLayout>
+            <!--
+            LinearLayout below holds the question and options
+            for problem 3
+            -->
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textQuestionProblem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckBoxClicked"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+                <Button
+                    android:id="@+id/button1Question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOptionsQuestion3"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+
+                    />
+                <Button
+                    android:id="@+id/button2Question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOptionsQuestion3"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+                <Button
+                    android:id="@+id/button3Question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOptionsQuestion3"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+                <Button
+                    android:id="@+id/button4Question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOptionsQuestion3"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+                <Button
+                    android:id="@+id/buttonToQuestion4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="openProblems"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <!--
+            LinearLayout below holds button to open and close problem 4
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/textTitleProblem4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/large_text"
+                    android:gravity="center_vertical"
+                    />
+
+                <Button
+                    android:id="@+id/openProblem4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openProblems"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+            </LinearLayout>
+            <!--
+            LinearLayout below holds the question and EditText
+            for problem 4
+            -->
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/textQuestionProblem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/textQuestionProblem4_piece1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onCheckBoxClicked"
+                        android:textSize="@dimen/medium_text"
+                        android:textColor="@color/color_textColor"
+                        />
+                    <EditText
+                        android:id="@+id/edtTxtQuestion4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textSize="@dimen/medium_text"
+                        android:textColor="@color/color_textColor"
+                        android:background="@color/color_viewBackground"
+                        android:padding="@dimen/padding_editText"
+                        />
+                    <TextView
+                        android:id="@+id/textQuestionProblem4_piece2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/medium_text"
+                        android:textColor="@color/color_textColor"
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonToQuestion5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="openProblems"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <!--
+            LinearLayout below holds button to open and close problem 5
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/textTitleProblem5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_textColor"
+                    android:textSize="@dimen/large_text"
+                    android:gravity="center_vertical"
+                    />
+
+                <Button
+                    android:id="@+id/openProblem5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openProblems"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+            </LinearLayout>
+            <!--
+            LinearLayout below holds the question and options
+            for problem 5
+            -->
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textQuestionProblem5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onCheckBoxClicked"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+                <Button
+                    android:id="@+id/option1Question5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOptionsQuestion5"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+                <Button
+                    android:id="@+id/option2Question5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickOptionsQuestion5"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/color_textColor"
+                    />
+
+            </LinearLayout>
+
+            <!--
+            Button below finalizes the quiz
+            showing the score in TextView with
+            id textFinalScore
+            -->
+            <Button
+                android:id="@+id/buttonFinalizeQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/color_textColor"
+                android:textSize="@dimen/large_text"
+                />
+            <!--
+            When Button above with id buttonFinalizeQuiz
+            is clicked the score will be shown in the
+            TextView below
+            -->
+            <TextView
+                android:id="@+id/textFinalScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text"
+                android:textColor="@color/color_textColor"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/imageFinalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+</ScrollView>

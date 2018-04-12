@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize_title">40sp</dimen>
+    <dimen name="margin_sides">10dp</dimen>
+    <dimen name="large_text">24sp</dimen>
+    <dimen name="medium_text">20sp</dimen>
+    <dimen name="padding_editText">2dp</dimen>
+</resources>
